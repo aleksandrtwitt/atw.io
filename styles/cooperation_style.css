@@ -1,0 +1,292 @@
+/* Импорты шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Стили на всю страницу -- body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', Courier;
+    background: linear-gradient(90deg, #613aecd8 0%, #95e6ff 100%, #20ff8f 100%);
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+/* page_atw */
+.page_atw {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.english_p {
+    font-size: 1rem;
+}
+
+.russian_lan {
+    font-family: Courier;
+    font-weight: 535;
+    font-size: 1.2em;
+}
+
+.russian_lan_top_first_hi_all {
+    font-family: Courier;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Настройки footer'а */
+.footer_page_atw {
+    text-align: center;
+}
+.footer_border1 {
+    border-top-style: solid;
+    border-width: 1.5px;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+/* Навигационная панель -- для ПК и устр. с более чем 750px - экраном */
+.navbar {
+    width: 100%;
+    position:fixed;
+    display: flex;
+    background: linear-gradient(90deg, #000000 0%, #585858 100%);
+    /* background-color: rgb(31, 31, 31); */
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-list a:hover { 
+    background-color: rgb(223, 30, 30);
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-img-atw {
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 2.5px;
+}
+
+/* Навигационная панель -- для устр. с мнее чем 750px экраном */
+
+@media (max-width: 750px) {
+    .nav-btn {
+        font-size: 2.1em;
+        padding-inline: 15px;
+        padding-bottom: 7px;
+        border: none;
+        background: linear-gradient(90deg, #656563 100%, #000000 0%);
+        /* background-color: rgb(31, 31, 31); */
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(223, 30, 30);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;       
+        right: 0.1px;
+        background: linear-gradient(90deg, #000000 0%, #585858 100%);
+        /* background-color: rgb(31, 31, 31); */
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+}
+
+/* Главный блок -- сама страница */
+
+.qiwi-form {
+    display: inline-block;
+    align-items: right;
+}
+
+.contacats_p {
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main_border {
+    border-bottom-style: solid;
+    border-width: 1.5px;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+/* Левая навигационная панель */
+.title p {
+    font-family: Orbitron;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+span {
+    color: white;
+}
+
+.list_menu a {
+    font-family: Orbitron;
+    font-size: 20px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: aquamarine;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.list_menu {
+    margin-bottom: 50px;
+}
+
+.list_menu ul {
+    list-style: none;
+}
+
+.list_menu li {
+    margin: 25px 0;
+}
+
+.list_menu a:hover {
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: aquamarine;
+    padding-left: 13px;
+
+    transition: all 0.2s ease;
+
+}
+
+.menu {
+    margin-top: 2px;
+    position: fixed;
+    padding: 1vh 25px;
+    background-color: rgb(120, 113, 113, 0.5);
+    backdrop-filter: blur(16px);
+    border-right-style: solid;
+    border-right-width: 7px;
+    border-right-color: rgb(255, 255, 255);
+    /* left: -281px; */
+    left: -288px;
+    transition: all 0.2s ease;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    max-height: 100%;
+}
+
+.menu:hover {
+    left: 0;
+    transition: all 0.2s ease;
+}
+
+@media (max-height: 500px) {
+    .menu {
+        /* overflow: scroll; */
+        max-height: 325px;
+        left: -303px;
+    }
+}
+
+@media (max-height: 390px) {
+    .menu {
+        /* overflow: scroll; */
+        max-height: 225px;
+        left: -303px;
+    }
+}
+
+@media (max-height: 250px) {
+    .menu {
+        /* overflow: scroll; */
+        max-height: 115px;
+        left: -303px;
+    }
+}
+
+
+/* Главная страница */
+.main_page {
+    margin-left: 1rem; /* 25px */
+}
+
+.photo_aleks_tw_about_me_avatar {
+    width: 200px;
+    display: block;
+    float: left;
+    margin: 15px;
+}
+
+@media (max-width: 410px) {
+    .russian_lan_top_first_hi_all {
+        font-size: 1.9rem
+    }
+    .russian_lan {
+        font-size: 1rem
+    }
+    .contacats_p {
+        font-size: 1.8rem;
+    }
+    .english_p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .russian_lan_top_first_hi_all {
+        font-size: 1.55rem
+    }
+    .russian_lan {
+        font-size: 1rem
+    }
+    .contacats_p {
+        font-size: 1.5rem;
+    }
+    .english_p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 333px) {
+    .russian_lan_top_first_hi_all {
+        font-size: 1.2rem
+    }
+    .russian_lan {
+        font-size: 0.8rem
+    }
+    .contacats_p {
+        font-size: 1rem;
+    }
+    .english_p {
+        font-size: 0.7rem;
+    }
+}
